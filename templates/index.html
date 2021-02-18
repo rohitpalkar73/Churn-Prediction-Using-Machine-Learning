@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+<title>Registration Form</title>
+<style type="text/css">
+<link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='style.css')}}">
+body{
+     background-image:url(abcd.jpg);
+     background-size:cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+    }
+</style>
+</head>
+
+<h2 ALIGN="CENTER">Registration Form</h2>
+<table border="0" align="center">
+<tbody>
+       <form action="/result" method="POST">
+     
+       <tr>
+       <th>Enter your Balance</th>
+       <td><input type="number"/></td>
+       </tr>
+
+       <tr>
+       <th>Enter Tenure</th>
+       <td><input id="Tenure" maxlength="30" name="Tenure" type="number" /></td>
+       </tr>
+
+
+       <tr>
+       <th>Age</th>
+       <td><input id="age" maxlength="50" name="age" type="number" /></td>
+       </tr>
+       
+       <tr>
+       <th>Select your gender</th>
+       <td>male<input type="radio" name="g" value="1"/>
+       female<input type="radio" name="g" value="0"/>
+       </td>
+       </tr>
+
+
+       <tr>
+       <th>Enter Number Of Products</th>
+       <td><input id="NumOfProducts" maxlength="30" name="NumOfProducts" type="number" /></td>
+       </tr>
+
+        <tr>
+        <th>Enter Salary</th>
+        <td><input id="Salary" maxlength="30" name="Salary" type="number" /></td>
+        </tr>
+
+       <tr>
+       <th>Is Active member??</th>
+       <td>Yes<input type="radio" name="x" value="1"/>
+       No<input type="radio" name="x" value="0"/>
+       </td>
+       </tr>
+       
+
+       <tr>
+       <th>Has Credit Card??</th>
+       <td>Yes<input type="radio" name="p" value="1"/>
+       No<input type="radio" name="p" value="0"/>
+       </td>
+       </tr>
+
+
+       <tr>
+       <th>Enter Credit Score</th>
+       <td><input id="CreditScore" maxlength="50" name="CreditScore" type="number" /></td>
+       </tr>
+
+       <tr>
+       <th>Has Exited?</th>
+       <td>Yes<input type="radio" name="q" value="1"/>
+       No<input type="radio" name="q" value="0"/>
+       </td>
+       </tr>
+
+       
+       <tr>
+       
+       <td align="right"><input type="submit" value="Submit"></td>
+       </tr>
+   </form>
+</tbody>
+</table>
+</html>
